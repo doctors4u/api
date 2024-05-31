@@ -1,10 +1,10 @@
 
 module.exports = {
   dialect: "mysql",
-  host: "db-mysql-nyc3-21038-do-user-16809639-0.c.db.ondigitalocean.com",
-  username: "doadmin",
+  host: process.env.HOST,
+  username: process.env.USER,
   password: process.env.PASSWORD,
-  database: "doctors4u",
+  database: process.env.DATABASE,
   port: 25060,
 
   pool: {
